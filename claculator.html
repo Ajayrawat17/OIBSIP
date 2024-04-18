@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculator.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"/>
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            border: border-box;
+        }
+        
+        .container {
+            margin: 150px;
+            margin-left: 450px;
+            margin-right: 450px;
+            background-color: rgb(164, 154, 154);
+            padding: 80px 80px;
+            text-align: center;
+            border-style: solid;
+            border-radius: 15px;
+        
+        }
+        
+        .convert {
+            width: 450px;
+            height: 50px;
+            border-radius: 50px;
+            border-style: outset;
+            text-align: center;
+            font-size: 25px;
+        
+        }
+        
+        .convert button {
+            width: 450px;
+            height: 40px;
+            border-radius: 30px;
+            background-color: rgb(50, 240, 69);
+            font-size: 20px;
+            font-family: serif;
+            font-weight: 900;
+        }
+        
+        .convert button:hover {
+            background-color: aqua;
+            cursor: pointer;
+        }
+    </style>
+    
+</head>
+<body>
+    <div  class="container">
+        <section>
+            <h1>Temprature convertor</h1>
+        </section>
+        <br>
+        <section class="input" >
+            <input type="number" placeholder="Enter value  " class="input_temp convert">
+        </section>
+        <br>
+        <section class="transform">
+            <select name="convert" class="convert" id="type">
+                <option>Celsius</option>
+                <option>Fahrenheit</option>
+                
+            </select>
+        </section>
+        <br>
+        <div class="convert">
+            <button type="button">Convert</button>
+        </div>
+        <br>
+        <section>
+            <p id="result"></p>
+        </section>
+        
+    </div>
+    <script >
+                        const inp = document.querySelector(".input_temp");
+                const type = document.querySelector("#type");
+                const btn = document.querySelector("button");
+                const  result = document.querySelector("#result");
+                const  h = document.querySelector("h1");
+
+                btn.addEventListener("click", () => {
+                    let val = inp.value;
+
+                    h.innerText = "Here is your value";
+                    if(type.value == "Celsius") {
+                        val = (val - 32)*5/9;
+                        val = val.toFixed(1);
+                        result.innerText = `${val}C`; 
+                    }
+                    else{
+                        val = (val * 9/5) + 32;
+                        val = val.toFixed(2);
+                        result.innerText = `${val}F`;
+                    }
+                })
+    </script>
+</body>
+</html>

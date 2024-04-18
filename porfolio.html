@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portpolio.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"/>
+      
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            border: border-box;
+          }
+          body{
+            background-color: rgba(0, 0, 0, 0.954);
+            color: beige;
+          }
+          
+        
+          header{
+            background-color:black;
+           
+            padding: 18px;
+            border-radius: 15px;
+            position: fixed;
+            width: 1470px;
+            
+            
+            }
+            .sectionA{
+                display: flex;
+            justify-content: space-between;
+           
+        
+            }
+            .navbar{
+                display: flex;
+                justify-content: space-evenly;
+               
+        
+            }
+            .navbar_icons:hover{
+                color: yellow;
+            }
+            .navbar_icons{
+                margin-right: 80px;
+            }
+            .nav_logo p{
+                font-size: 30px;
+                font-family: serif;
+                color: rgb(255, 225, 0);
+            }
+            .main_sectionA{
+                padding-left: 100px;
+                padding-right: 150px;
+                display: flex;
+                padding-top: 100px;
+                justify-content: space-evenly;
+                position: relative;
+            }
+            .main_sectionA_img{
+                position:relative;
+                margin-right: 15px;
+                
+            }
+            #main_sectionA_hr{
+                margin-top: 50px;
+                margin-bottom: 50px;
+                
+            }
+            #first_img{
+                position:absolute;
+                left: 2px;margin-top: 50px;
+                
+                
+                
+            }
+            .main_sectionA_content{
+                font-size: 50px;
+                font-family: serif;
+                font-weight:600;
+                margin-right: 60px;
+            }
+            #element{
+                color: rgb(226, 223, 43);
+            }
+            #contentA{
+                font-size: 40px;
+                margin-top: 50px;
+            }
+            #contentB{
+                font-size: 75px;
+                color: rgb(255, 166, 0);
+                margin-top: 2%;
+                
+            }
+            #outer_mainsectionA_hr{
+                margin-left: 100px;
+                margin-bottom: 5px;
+                margin-right: 100px;
+            }
+           .main_sectionB{
+            margin: 90px;
+            padding-right: 100px;
+           }
+           .block_container{
+            display: block;
+            margin-left: 35px;
+            right: -100px;
+           }
+           .about_container{
+            padding: 80px;
+            border-radius: 10px;
+            border-style: solid;
+            display: flex;
+            padding-top: 15px;
+            justify-content: space-evenly;
+            margin-right: 250px;
+            box-shadow: 0px 0px 15px rgb(36, 167, 255);
+            
+            margin-bottom: 50px;
+            transition: 0.5s;
+           }
+           .about_container:hover{
+            box-shadow: 0px 0px 15px rgb(255, 237, 36);
+            transform: scale(1.08);
+            z-index: 2;
+           }
+           .about_container02:hover{
+            box-shadow: 0px 0px 15px rgb(255, 237, 36);
+            transform: scale(1.08);
+            z-index: 2;
+           }
+
+           .about_container02{
+            padding: 60px;
+            margin-top: 70px;
+            border-radius: 10px;
+            border-style: solid;
+            display: flex;
+            padding-top: 15px;
+            justify-content: space-evenly;
+            margin-left: 350px;
+            box-shadow: 0px 0px 15px rgb(36, 167, 255);
+            transition: 0.5s;
+           }
+           
+           #about_img{
+            padding: 10px;
+            margin-top: 35px;
+            padding-top: 38px;
+            border-radius: 10000px;
+            
+           }
+           .about_content{
+            margin-top: 100px;
+            font-size: x-large;
+            margin-left: 50PX;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color:rgb(49, 240, 215);
+           }
+           #About_first{
+            margin-top: 9px;
+            margin-bottom: 15px;
+            margin-left: 150px;
+            margin-right: 150px;
+           }
+           #about_me{
+            text-align: center;
+            font-size: 45px;
+            font-family: serif;
+            color: rgb(240, 217, 13);
+           }
+           .project_section{
+            display: flex;
+            justify-content: space-evenly;
+            margin: 40px;
+           }
+           .project_fill{
+            border-style: outset;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            margin-right: 15px;
+            transition: 1s;
+            box-shadow: 0px 0px 15px rgb(36, 167, 255);
+            
+           }
+           .project_fill:hover{
+            transform: scale(1.05);
+           }
+           #project_img{
+            border-radius: 100px;
+            margin-bottom: 20px;
+           
+           }
+           #my_project{
+            text-align: right;
+            margin-right: 50px;
+            font-size: 50px;
+            font-family: serif;
+           }
+           .main_sectionA button{
+            padding: 15px;
+            margin-top: 50px;
+            color: blue;
+            font-weight: 900;
+            font-family: serif;
+            width: 200px;
+            border-radius: 10px;
+            font-size: 20px;
+            box-shadow: 0px 0px 15px rgb(36, 167, 255);
+           }
+           .contact_class form label{
+            display: block;
+            justify-content: center;
+           
+           }
+           .contact_class{
+            font-size: 40px;
+            text-align: center;
+            border-radius: 15px;
+            border-style: double;
+            margin: 50px;
+            border-color: rgb(44, 151, 201);
+            box-shadow: 0px 0px 15px rgb(36, 255, 54);
+            padding: 20px;
+            border-width: 5px;
+        
+           }
+           #input{
+            width: 600px;
+            height: 40px;
+            text-align: center;
+            
+            border-radius: 50px;
+            background-color: rgba(130, 232, 213, 0.613)
+           }
+           input{
+            color: rgb(0, 0, 0);
+        
+           }
+           
+    </style>
+    
+</head>
+<body>
+    <header>
+        <section class="sectionA">
+            <div class="nav_logo"><p>PARADOX</p></div>
+            <div class="navbar">
+                <div class="navbar_icons">Home</div>
+                <div class="navbar_icons">About</div>
+                <div class="navbar_icons">Blog</div>
+                <div class="navbar_icons">Contact Me</div>
+            </div>
+        </section>
+        <hr>
+    </header>
+    <main>
+        <section class="main_sectionA">
+            <div class="main_sectionA_content">
+                <div id="contentA">Hi,</div>
+                <div id="contentB">I am Ajay rawat</div>
+                <span id="element"></span>
+                <br>
+                <button type="button">Hire Me</button>
+               
+            </div>
+            <div class="main_sectionA_img">
+                <img src="https://i.ibb.co/FBF8Lzb/pngegg-1.png" alt="" id="second_img" height="400px" width="500px">
+                <img src="https://i.ibb.co/k07czSK/pngegg-4.png" alt="" id="first_img" height="350px" width="270px">
+            </div>
+            <hr id="main_sectionA_hr">
+            <div class="block_container">
+                <div><img src="https://i.ibb.co/GJS4ZJp/pngegg-6.png" id="block_img" height="60px"
+                    width="50px"></div>
+                <div><img src="https://i.ibb.co/HhmkBTn/pngegg-8.png" id="block_img" height="60px"
+                    width="50px"></div>
+                <div><img src="https://i.ibb.co/bRWDZ9r/pngegg-7.png" id="block_img" height="60px"
+                    width="50px"></div>
+                <div><img src="https://i.ibb.co/BKBCK8N/pngegg-9.png" id="block_img" height="60px"
+                    width="50px"></div>
+            </div>
+            
+        </section>
+        <hr id="outer_mainsectionA_hr">
+        <section class="main_sectionB">
+            <h1 id="about_me">ABOUT  Me !</h1>
+            <hr id="About_first">
+            <div class="about_container">
+                
+                <div class="about_img"><img src="https://i.ibb.co/LS7HnsM/pngegg-2.png" id="about_img" alt="" height="300px" ></div>
+                <div class="about_content"><p><h1>Hi,</h1> I am a frontend web designer with a friendly skills in machine learning. basically i make various design's for startup company or fpr big companies, i usually deals with designing and maintaining of website user interface.</p></div>
+            </div>
+            <hr>
+            <div class="about_container02">
+                <div class="about_content"><p><h1>Hi,</h1> I am a person who is pationate about photography can wildlife photography. i also work as a photography head in my own university, where is used to click multiple photos for my campus photo graphy department</p></div>
+                <div class="about_img"><img src="https://i.ibb.co/gDBTWcq/Whats-App-Image-2024-04-08-at-22-03-49-4427a492.jpg" id="about_img" alt="" height="300px" ></div>
+            </div>
+            
+        </section>
+        <h1 id="my_project">MY PROJECT's</h1>
+        <section class="project_section">
+            
+            <div class="project_fill">
+                <img src="https://i.ibb.co/2yXgPwk/218-2187596-website-design-development-services-website-design-services-hd.png"  id="project_img"
+                alt="" height="200px" width="250px">
+                <p>I designed a e-commerce website frontend user interface.I am still working it framwork and angular to enhace my website interface and also going with backend database management system.</p>
+            </div>
+            <div class="project_fill"><img src="https://i.ibb.co/jLLwfKw/54-How-does-Home-and-office-Automation-works-1.jpg" id="project_img" alt="" height="200px" width="250px">
+            <p>I designed a SONAR range navigation system using machine learning algorithum by python , which use the current data and predict the upcomimg rock and mine presence using new frequence reading.</p></div>
+            <div class="project_fill"><img src="https://i.ibb.co/R92jtcD/artificial-heart-770x510-ss-no-exp.jpg" alt="" id="project_img" height="200px" width="250px">
+            <p>I designed a heart attack prediction mechanism using machine learning algorithum by python , which take the current reports and analyse it after that on the upcoming data it will predict weather the paitence have heart desiese or not.</p></div>
+            <div class="project_fill"><img src="https://i.ibb.co/WKH75Gm/spam-mail.webp" id="project_img" alt="" height="200px" width="250px">
+            <p>I designed a heart attack prediction mechanism using machine learning algorithum by python , which take the current mails and analyse it after that on the upcoming data it will predict weather the upcoming mail is fruad or not.</p></div>
+        </section>
+        <section class="contact_class">
+            <div>
+                <div>
+                    <h1>Contact Me</h1>
+                </div>
+                <form>
+                    <label for="uname"><b> First Name</b></label>
+                    <input type="text" placeholder="Enter first name" name="uname" id="input" >
+                    <label for="uname"><b> Last Name</b></label>
+                    <input type="text" placeholder="Enter last name" name="uname" id="input" >
+                    <label for="uname"><b> Email id</b></label>
+                    <input type="text" placeholder="Enter your email id" name="uname" id="input">
+                  </form>
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed('#element', {
+        strings: ['Frontend web developer', 'Data Visualizer','Data Minner', 'Graphic Designer'],
+        typeSpeed: 50,
+      });
+    </script>
+    
+
+</body>
+
+</html>

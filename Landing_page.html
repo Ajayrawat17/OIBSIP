@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="landing_page.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"/>
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            border: border-box;
+          }
+        
+          header{
+            margin: 10px;
+            background: linear-gradient(89deg, rgb(253, 220, 155) 26.2%, rgb(255, 215, 165) 48.5%);
+            height: 870px;
+          }
+         
+           
+          .sectionA{
+            padding: 25px;
+            display: flex;
+            justify-content: space-between;
+            margin-left: 100px;
+            margin-right: 100px;
+          }
+          .logo_box h2{
+            font-weight: 900;
+            font-stretch: extra-expanded;
+            font-size: 30px;
+            font-family:serif;
+            color: rgb(171, 0, 0);
+            
+          }
+          .sele{
+            background-color: transparent;
+            border-radius: 50px;
+            padding-top: 2px;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-bottom: 2px;
+        
+          }
+          .sectionB{
+            text-align: center;
+           
+          }
+          .sectionB_first h1{
+            font-size: 70px;
+           font-family: serif;
+            font-weight: 900;
+            color: rgb(0, 0, 27);
+          }
+          #sectionB_first{
+            margin-top: 30px;
+          }
+        
+         #sectionB_second{
+            font-weight:800 ;
+            color: rgb(0, 0, 27);
+         }
+         .sectionB_thirld button{
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 40px;
+            padding-right: 40px;
+            background-color: rgb(12, 130, 91);
+            border-radius: 19px;
+            color: rgb(255, 255, 255);
+            font-size: 15px;
+         }
+        .sectionB_fourth p{
+            font-family:sans-serif;
+            font-weight: 600;
+            font-size: 7px;
+            word-spacing: 4px;
+        }
+        .sectionB_img{
+            margin-top: 80px;
+        }
+        main{
+            background-color: rgb(255, 255, 255);
+            margin: 10px;
+        }
+          
+          .sectionc{
+            display: flex;
+            padding-top: 80px;
+            justify-content: space-evenly;
+            text-align: start;
+            padding-right: 150px;
+          }
+          .sectionc_firstB{
+            margin-top: 80px;
+            color: rgb(4, 4, 50);
+            
+          }
+          #firstB_note p{
+            font-size: 40px;
+            font-family: serif;
+            font-weight: 700;
+            margin-bottom: 30px;
+            color: rgb(4, 4, 50);
+          }
+          #firstB_msg p{
+            margin-bottom: 30px;
+            color: rgb(4, 4, 50);
+            font-weight: 600;
+            
+            
+          }
+          #firstB_button button{
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            background-color: rgb(6, 124, 74);
+            border-radius: 80px;
+            color: aliceblue;
+            font-weight: 400;
+            font-size: 15px;
+          }
+          .sectiond{
+            margin-left: 200px;
+            color: rgb(4, 4, 50);
+            display: flex;
+            margin-right: 200px;
+          }
+          .sectiond_firstB{
+            margin-top: 80px;
+            color: rgb(4, 4, 50);
+          }
+          .sectione{
+            margin-left: 200px;
+            display: flex;
+            color: rgb(4, 4, 50);
+            margin-right: 100px;
+          }
+          .sectione_firstB{
+            margin-top: 80px;
+          }
+          .base_img{
+            display: flex;
+            justify-content: space-around;
+            padding-left: 200px;
+            padding-right: 200px;
+          }
+          #base_img{
+            border-radius: 10px;
+            border-style: solid;
+            border-left: 1px;
+            padding: 2px;
+            background-color: rgb(134, 235, 235);
+          }
+          .sectionf{
+            display: flex;
+            margin-top: 100px;
+            padding-left: 250px;
+            padding-right: 150px;
+            text-align: center;
+            padding-bottom: 120px;
+          }
+          .sectionf_img img{
+            border-style: solid;
+            border-radius: 80px;
+            padding: 9px;
+            border-width: 1px;
+           
+          }
+          #msg01{
+            font-size: 25px;
+            font-weight: 600;
+            font-family: serif;
+          }
+          #msg02{
+            font-weight: 400;
+          }
+          .sectionf_A{
+            margin-left: 20px;
+            margin-right: 20px;
+          }
+          .footer_base{
+            padding-top: 49px;
+            background-repeat: no-repeat;
+            margin-top: 100px;
+            height: 700px;
+            background-color: rgb(0, 6, 24);
+            padding-left: 80PX;
+            text-align: center;
+          }
+          .footer_base_second{
+            background-color: rgb(251, 251, 251);
+            padding-left: 0px 100px;
+            margin-right: 100px;
+            margin-top: -100px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            border-radius: 50px;
+            border-style: solid;
+            border-color:  rgb(0, 6, 24);
+          }
+          #sectionu {
+            font-size: 60px;
+            font-family: serif;
+            font-weight: 900;
+            color: brown;
+          }
+          .footer_base_B{
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-evenly;
+        
+          }
+          #sectionv{
+            font-size: 30px;
+            font-weight: 900;
+            color: brown;
+            font-family: serif;
+            border-radius: 100px;
+            padding: 10px;
+           
+            
+          }
+        .footer_base img{
+          border-radius: 50px;
+          border-style: solid;
+          border-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="sectionA">
+            <div class="logo_box">
+                <h2>Sursun</h2>
+            </div>
+            <div class="language_box">
+                <select name="" id="language_box" class="sele">
+                <option value="En">English</option>
+                <option value="En">Hindi</option>
+                <option value="En">Urdu</option>
+                <option value="En">Spanish</option>
+                <option value="En">French</option>
+                <option value="En">Russian</option>
+                <option value="En">Geeek</option>
+                <option value="En">Chinese</option>
+                </select>
+         </div>
+        </div>
+        <div class="sectionB">
+            <div class="sectionB_first" id="sectionB_first">
+                <h1>The SURSUN explore your intrest</h1>
+            </div>
+            <div class="sectionB_second"id="sectionB_first">
+                <p id="sectionB_second">Go further with #1 trusted website  </p>
+            </div>
+            <div class="sectionB_thirld" id="sectionB_first">
+                <button type="button" id="Start_button" > Get Express</button>
+            </div>
+            <div class="sectionB_fourth"id="sectionB_first">
+                <p id="sectionB_fourth">7 DAYS REPLACEMENT GURANTEE</p>
+            </div>
+            <div class="sectionB_img">
+                <img src="https://i.ibb.co/RbF0h4q/pngegg-2.png" alt="" width="1500px" >
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="Container">
+            <div class="sectionc">
+                <div class="sectionc_firstA">
+                    <img src="https://i.ibb.co/0BX9xGb/pngegg-1.png" alt="" height="400px" width="400px">
+                </div>
+                <div class="sectionc_firstB">
+                    <div id="firstB_note">
+                        <p>Secure Acsess worldwide</p>
+                    </div>
+                    <div id="firstB_msg">
+                        <p>search any product related to you intrest and nee with premium safety</p>
+                    </div>
+                    
+                    <div id="firstB_button">
+                        <button type="button">Get Express Sursun</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="sectiond">
+               
+                <div class="sectiond_firstB">
+                    <div id="firstB_note">
+                        <p>On Click to a safer internet</p>
+                    </div>
+                    <div id="firstB_msg">
+                        <p>Going online doesn't have to mean being exposed. Wheather you'r shopping from your desk and just connecting at a cafe , keep your personal information more private and secure.  </p>
+                    </div>
+                    <div id="firstB_button">
+                        <button type="button">Get Express Sursun</button>
+                    </div>
+
+                </div>
+                <div class="sectiond_firstA">
+                    <img src="https://i.ibb.co/MM0Yggp/pngegg-7.png" alt="" height="400px" width="400px">
+                </div>
+            </div>
+            <div class="sectione">
+                <div class="sectione_firstA">
+                    <img src="https://i.ibb.co/GsF0Ymt/laptop-tablet-and-smartphone-icons-vector-19878443.jpg" alt="" height="400px" width="400px">
+                </div>
+                <div class="sectione_firstB">
+                    <div id="firstB_note">
+                        <p>Use express Sursun in every device</p>
+                    </div>
+                    <div id="firstB_msg">
+                        <p>Phone , tablet, computer- no matter where you are and on what you are using, a single click has got you coverd</p>
+                    </div>
+                    <div class="base_img">
+                        <div id="base_img">
+                            <img src="https://i.ibb.co/60Zp3NK/pngegg-3.png" alt="" height="40px" width="50px">
+                        </div>
+                        <div id="base_img">
+                            <img src="https://i.ibb.co/vwHNdrh/pngegg-5.png" alt="" height="40px" width="50px">
+                        </div>
+                        <div id="base_img">
+                            <img src="https://i.ibb.co/W3CqGw1/pngegg-4.png" alt="" height="40px" width="50px">
+                        </div>
+                        <div id="base_img">
+                            <img src="https://i.ibb.co/0XqKMYn/pngegg-6.png" alt="" height="40px" width="50px">
+                        </div>
+                    </div>
+                    <br>
+                    <div id="firstB_button">
+                        <button type="button">Get Express Sursun</button>
+                    </div>
+
+                </div>
+               
+            </div>
+            <div class="sectionf">
+                <div class="sectionf_A">
+                    <div class="sectionf_img">
+                        <img src="https://i.ibb.co/vjspsYv/pngegg-8.png" alt="" height="120px" width="120px">
+                    </div>
+                    <br>
+                    <div><p id="msg01">Strong data visit</p></div>
+                    <br>
+                    <div><p id="msg02">"Unlock the power of strong data insights with our website, driving informed decisions and maximizing your online success!"</p></div>
+                </div>
+                <div class="sectionf_A">
+                    <div class="sectionf_img">
+                        <img src="https://i.ibb.co/db0JRW6/10d6bd3fafcfa4553b50e1ec7f533f5d.gif" alt="" height="120px" width="120px">
+                    </div>
+                    <br>
+                    <div><p id="msg01">Work seamlessly anywhere</p></div>
+                    <br>
+                    <div><p id="msg02">"Empower your productivity with our platform, designed to help you work seamlessly anywhere, whether in the office, at home, or on the go."</p></div>
+                </div>
+                <div class="sectionf_A">
+                    <div class="sectionf_img">
+                        <img src="https://i.ibb.co/6yvpJT3/speedometer-icon-animation-optional-luma-086597076-prevstill.webp" alt="" height="120px" width="190px">
+                    </div>
+                    <br>
+                    <div><p id="msg01">Quick connectivity</p></div>
+                    <br>
+                    <div><p id="msg02">"Experience lightning-fast connectivity with our website, ensuring instant access and smooth interactions for a seamless user experience."</p></div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="footer_base">
+            <div class="footer_base_second">
+                <div class="footer_base_A">
+                    <p id="sectionu">Ultra fast delivery around the globe</p>
+                </div>
+                <div class="footer_base_B">
+                    <div><p id="sectionv">190 loc</p></div>
+                    <div><p id="sectionv">89 con</p></div>
+                    <div><p id="sectionv">150 millon user</p></div>
+                </div>
+                <div><img src="https://i.ibb.co/5642gYv/pngegg-9.png" alt="" height="400px" width="800px"></div>
+         </div>
+            
+        </div>
+        
+    </main>
+</body>
+</html>
